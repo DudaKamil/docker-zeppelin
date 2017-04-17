@@ -8,7 +8,7 @@
 
 FROM openjdk:8-jdk-alpine
 
-LABEL maintainer "kamilduda01@gmail.com
+LABEL maintainer "kamilduda01@gmail.com"
 
 ENV ZEPPELIN_HOME=/opt/zeppelin
 ENV PATH="$PATH:$ZEPPELIN_HOME"
