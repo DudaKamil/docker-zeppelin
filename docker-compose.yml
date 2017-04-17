@@ -1,0 +1,25 @@
+# Zeppelin Web UI on port 9080 and 9443
+
+version: '2'
+services:
+  docker-zeppelin:
+    image: kduda/zeppelin:latest
+    container_name: docker-zeppelin
+    volumes:
+      - logs:/opt/zeppelin/logs
+      - notebook:/opt/zeppelin/notebook
+    ports:
+      - 9080:8080
+      - 9443:8443
+    networks:
+      - zeppelin-network
+
+volumes:
+  logs:
+    driver: local
+  notebook:
+    driver: local
+
+networks:
+  zeppelin-network:
+    driver: bridge
