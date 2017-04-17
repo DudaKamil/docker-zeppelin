@@ -45,7 +45,6 @@ ENV SPARK_HOME="/usr/local/spark-$SPARK_VERSION"
 ENV PATH="$PATH:$SPARK_HOME/bin"
 ENV PATH="$PATH:$SPARK_HOME/sbin"
 
-# http://www.apache.org/dyn/closer.lua/spark/spark-2.1.0/spark-2.1.0-bin-hadoop2.7.tgz
 ARG SPARK_ARCHIVE=spark-$SPARK_VERSION-bin-hadoop$HADOOP_VERSION.tgz
 ARG SPARK_URL=http://ftp.ps.pl/pub/apache/spark/spark-$SPARK_VERSION/$SPARK_ARCHIVE
 
